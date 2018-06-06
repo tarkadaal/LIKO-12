@@ -57,8 +57,8 @@ wait(0.5)
 lualogo:draw(sw-lualogo:width()-6,5)
 likologo:draw(2,7)
 
-GPU.print("LIKO-12 - Fantasy Computer",15,6)
-GPU.print("Copyright (C) Rami Sabbagh",15,13)
+GPU.print("S64 - Leuk Leren Computer",15,6)
+GPU.print("Copyright (C) F.W.M.",15,13)
 
 --LIKO-12 Sourcecode .love creation
 if _LIKO_Old or not love.filesystem.getInfo("/Misc/LIKO-12_Source.love") then
