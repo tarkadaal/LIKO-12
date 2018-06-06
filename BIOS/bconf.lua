@@ -6,26 +6,27 @@ local CPU, yCPU, CPUKit = PA("CPU")
 
 --Create a new gpu mounted as "GPU"
 local GPU, yGPU, GPUKit = PA("GPU","GPU",{
-  _ColorSet = { --The P8 Pallete
+  _ColorSet = { --The S64 Pallete
     {0,0,0,255}, --Black 1
-    {28,43,83,255}, --Dark Blue 2
-    {127,36,84,255}, --Dark Red 3
-    {0,135,81,255}, --Dark Green 4
-    {171,82,54,255}, --Brown 5
-    {96,88,79,255}, --Dark Gray 6
-    {195,195,198,255}, --Gray 7
-    {255,241,233,255}, --White 8
-    {237,27,81,255}, --Red 9
-    {250,162,27,255}, --Orange 10
-    {247,236,47,255}, --Yellow 11
-    {93,187,77,255}, --Green 12
-    {81,166,220,255}, --Blue 13
-    {131,118,156,255}, --Purple 14
-    {241,118,166,255}, --Pink 15
-    {252,204,171,255} --Human Skin 16
+    {26,67,214,255}, --Navy Blue 2
+    {186,37,48,255}, --Dark Red 3
+    {63,44,133,255}, --Dark Purple 4
+    {143,109,76,255}, --Brown 5
+    {24,158,143,255}, --Sea 6
+    {143,128,109,255}, --Grey Brown 7
+    {255,255,255,255}, --White 8
+    {237,48,48,255}, --Cherry Red 9
+    {251,144,4,255}, --Orange 10
+    {240,180,0,255}, --Yellow 11
+    {100,174,19,255}, --Green 12
+    {25,204,233,255}, --Squla Blue 13
+    {180,80,169,255}, --Purple 14
+    {237,62,132,255}, --Magic Pink 15
+    {121,214,246,255} --Pink 16
   },
   _ClearOnRender = true, --Speeds up rendering, but may cause glitches on some devices !
-  CPUKit = CPUKit
+  CPUKit = CPUKit,
+  title  = "SQULA-64"
 })
 
 local LIKO_W, LIKO_H = GPUKit._LIKO_W, GPUKit._LIKO_H
