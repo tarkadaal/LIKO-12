@@ -66,11 +66,10 @@ function term.init()
   if not GameDiskOS then
     fs.drive("D") --Set the HDD api active drive to D
   end
-  color(12) print("SQULA-64")
-  editor.editorsheet:draw(60,(fw+1)*6+1,fh+2)
+  SpriteGroup(193,1,1,10,4,1,1,0,editor.editorsheet)
   printCursor(0,4,0)
-  cam("translate",0,3) color(12) print("D",false) color(6) print("isk",false) color(12) print("OS",false) color(6) cam("translate",0,-1) print("  ".._LIKO_BUILD) flip() sleep(0.125) cam()
-  --color(6) print("\nhttp://github.com/ramilego4game/liko12")
+  cam("translate",0,3) color(12) print("D",false) color(7) print("isk",false) color(12) print("OS",false) color(7) cam("translate",0,-1) print("  ".._LIKO_BUILD) flip() sleep(0.125) cam()
+  color(6) print("\nbased on: http://github.com/ramilego4game/liko12")
 
   flip() sleep(0.0625)
   if GameDiskOS then
