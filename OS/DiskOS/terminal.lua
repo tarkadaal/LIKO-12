@@ -67,8 +67,9 @@ function term.init()
     fs.drive("D") --Set the HDD api active drive to D
   end
   color(12) print("SQULA-64")
-  printCursor(0,1,0)
-  cam("translate",0,3) color(12) print("D",false) color(6) print("isk",false) color(12) print("OS",false) color(6) cam("translate",0,-1) print("  ".._LIKO_BUILD) editor.editorsheet:draw(60,(fw+1)*6+1,fh+2) flip() sleep(0.125) cam()
+  editor.editorsheet:draw(60,(fw+1)*6+1,fh+2)
+  printCursor(0,4,0)
+  cam("translate",0,3) color(12) print("D",false) color(6) print("isk",false) color(12) print("OS",false) color(6) cam("translate",0,-1) print("  ".._LIKO_BUILD) flip() sleep(0.125) cam()
   --color(6) print("\nhttp://github.com/ramilego4game/liko12")
 
   flip() sleep(0.0625)
